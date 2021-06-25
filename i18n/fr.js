@@ -108,5 +108,17 @@ export default {
   radar: {
     desire: "Désir",
     level: "Niveau"
+  },
+  statistics: {
+    titleSection: "Mes statistiques",
+    dayStreak: "Jours d'affilés",
+    sentenceRankIncodming1: "Il te reste ",
+    sentenceRankIncodming2: "xp à avoir pour être promu",
+    league: "Classement général",
+    bronze: "Bronze",
+    silver: "Argent",
+    gold: "Or",
+    platin: "Platine",
+    diamond: "Diamant",
   }
 };

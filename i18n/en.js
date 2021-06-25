@@ -106,5 +106,17 @@ export default {
   radar: {
     desire: "Desire",
     level: "Level"
+  },
+  statistics: {
+    titleSection: "My statistics", 
+    dayStreak: "Day Streak",
+    sentenceRankIncodming1: "Still ",
+    sentenceRankIncodming2: "xp to be promoted",
+    league: "League",
+    bronze: "Bronze",
+    silver: "Silver",
+    gold: "Gold",
+    platin: "Platin",
+    diamond: "Diamond",
   }
 };
