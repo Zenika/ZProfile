@@ -120,5 +120,6 @@ export default {
     gold: "Or",
     platin: "Platine",
     diamond: "Diamant",
+    numberCompetencies: "Compétences ajoutées"
   }
 };
