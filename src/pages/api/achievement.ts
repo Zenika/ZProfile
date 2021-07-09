@@ -1,8 +1,8 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { onSkillInsertedAchievement } from "../../utils/achievements/onSkillInsertedAchievement";
+import { categoryCompletionAchievement } from "../../utils/achievements/categoryCompletionAchievement";
 
 const ACHIEVEMENTS = {
-  onSkillInsertedAchievement: onSkillInsertedAchievement,
+  categoryCompletionAchievement: categoryCompletionAchievement,
 };
 
 export type AchievementRequestData = {
@@ -11,11 +11,10 @@ export type AchievementRequestData = {
   triggerName: string;
   data: any;
 };
-type AchievementResponseData = {};
 
 export default async function handler(
   req: NextApiRequest,
-  res: NextApiResponse<AchievementResponseData>
+  res: NextApiResponse<any>
 ) {
   const payload: AchievementRequestData = {
     userEmail: req.body.event.session_variables["x-hasura-user-email"],

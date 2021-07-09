@@ -1,8 +1,5 @@
 - table:
     schema: public
-    name: Achievement
-- table:
-    schema: public
     name: AgenciesAverageCurrentSkillsAndDesires
   select_permissions:
   - role: world
@@ -236,7 +233,7 @@
   - role: world
     permission:
       columns:
-      - achievementLabel
+      - label
       - created_at
       - userEmail
       filter: {}
@@ -356,7 +353,7 @@
         userEmail:
           _eq: x-hasura-user-email
   event_triggers:
-  - name: onSkillInsertedAchievement
+  - name: categoryCompletionAchievement
     definition:
       enable_manual: false
       insert:
@@ -364,7 +361,7 @@
     retry_conf:
       num_retries: 5
       interval_sec: 30
-      timeout_sec: 180
+      timeout_sec: 60
     webhook_from_env: HASURA_ACHIEVEMENTS_ENDPOINT
 - table:
     schema: public
